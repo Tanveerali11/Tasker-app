@@ -15,12 +15,13 @@
         <h1 class="display-4" style=" font-weight: bold;">WelCome To Tasker</h1>
         <p class="lead" style="font-size: 20px; font-weight: bold;" >Get your task done by the Tasker Technicians.</p>
         <hr class="my-4">
-        <form class="form-inline my-2 my-lg-0" method="POST" action="index.php">
+        <form class="form-inline my-2 my-lg-0" method="POST" >
             <input class="form-control mr-sm-2" type="email" required name="signemail" placeholder="email@example.com" aria-label="email">
             <input class="form-control mr-sm-2" type="password" required name="signpass" placeholder="Password" aria-label="Password">
-            <button class="btn btn-danger my-2 my-sm-0" type="submit" name="signsubmit" id="submit" value="Submited">LogIn</button>
+            <button class="btn btn-danger my-2 my-sm-0" type="submit" formaction="login" >LogIn</button>
+            <button class="btn btn-success btn-lg"  formaction="signup" style="margin-top: 30px; margin-left: 200px;" >Sign UP</button>
           </form>
-          <a class="btn btn-success btn-lg" href="signup.php" role="button" style="margin-top: 30px; margin-left: 200px;" >Sign UP</a>
+         
        
       </div>
   <script src="bootstrap.js"></script>    

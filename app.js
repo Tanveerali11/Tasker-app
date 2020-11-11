@@ -10,10 +10,21 @@ app.get("/",(req,res)=>
 {
     res.sendFile(__dirname+"/index.html")
 });
-let id="";
-app.post("/",(req,res)=>
+
+app.post("/login",(req,res)=>
 {
-id=req.body.submit;
+    console.log("main page p agya ha");
+    res.sendFile(__dirname+"/main.html")
+});
+app.post("/signup",(req,res)=>
+{
+  console.log("signup page pe ha gee");
+  res.sendFile(__dirname+"/signup.html")
+ 
+});
+app.post("/signin", (req,res)=>
+{
+    res.sendFile(__dirname+"/main.html");
 });
 
 

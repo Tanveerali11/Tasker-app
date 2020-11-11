@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>tasker signup</title>
+  
+    <style>
+        .jumbotron{
+            height: 650px;
+           font-weight: bold;
+            color: white;
+            background: url("images/signimage.jpg") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+        }
+        .inp1{
+            width: 250px;
+          }
+          .custom-centered{
+ margin:0 auto;
+ width:300px;
+}
+          
+    </style>
+  
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4" style="font-weight: bold; text-align: center;">Sign Up</h1>
+          <div  class="custom-centered" >
+    <div id="alert">
+
+    
+    
+    </div>
+            <form method="POST"  >
+            <div class="form-group">
+                <label  style="font-size: 20px; ">Name</label>
+                <input type="text" class="form-control inp1" id="Name" name="name" required placeholder="Name"  aria-describedby="emailHelp">
+              </div>
+              
+                <div class="form-group">
+                    <label  style="font-size: 20px;"> Phone </label>
+                    <input type="text" class="form-control inp1" id="Phone" required name="phone"  placeholder="Phone Number"  aria-describedby="emailHelp">
+                  </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1" style="font-size: 20px; ">Email address</label>
+              <input type="email" class="form-control inp1" name="email" required id="Email" placeholder="Exampl@email.com"  aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label  style="font-size: 20px;">Password</label>
+              <input type="password" placeholder="Password" required name="pass" id="Password" class="form-control inp1">
+            </div>
+            <div class="form-group form-check">
+            <button type="submit" name="submit" formaction="signin" class="btn btn-primary" >Submit</button>
+            </div>
+            
+          </form>
+        </div>
+</div>
+      </div>
+
+    <script src="css/bootstrap.js"></script>
+
+</body>
+</html>
+
+ 
+
+
+
